@@ -15,16 +15,19 @@
 body {
   position: relative;
   overflow-x: hidden;
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 
-  color: #1C1C1C;
-  background-color: #fff;
+  background-color: var(--page-bg);
+  color: var(--text-color-dark);
 
   font-family: var(--font-main);
-  font-size: 12px;
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.2;
 
   font-synthesis: none;
@@ -34,6 +37,12 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.48px;
 }
 
 img,

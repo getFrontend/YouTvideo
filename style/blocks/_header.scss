@@ -1,0 +1,38 @@
+.header {
+  padding: 18px 0 50px 0;
+  background-color: var(--color-secondary);
+  color: var(--text-color-light);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__logo-img {
+    width: 145px;
+    height: 19px;
+  }
+
+  &__link {
+    display: block;
+    // width: 20px;
+    // height: 20px;
+
+    &_favourite {
+    }
+
+    &_favourite-text {
+      display: none;
+    }
+
+    &_favourite-img {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
