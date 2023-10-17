@@ -5,27 +5,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>You-Tvideo</title>
+  <link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Inter-Black.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href=".fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <script type="module" src="./main.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
-      1
+    <div class="container header__container">
+      <a class="header__logo" href="/">
+        <svg class="header__logo-img" viewBox="0 0 240 32" role="img" aria-label="Логотип сервиса You-Tvideo">
+          <use xlink:href="./img/sprite.svg#logo-orange" />
+        </svg>
+      </a>
+      <a class="header__link header__link_favourite" href="/favourite">Избранное
+      </a>
     </div>
   </header>
 
   <main class="main">
-    <div class="container">
-      2
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Смотри. Загружай. Создавай</h1>
+        <p class="hero__tagline">Удобный видеохостинг для тебя </p>
+      </div>
+    </section>
+
+    <div class="seacrh">
+      <form class="search__form">
+        <label class="search__label">
+          <input class="search__input" type="search">
+          <button class="search__btn" type="submit">поиск</button>
+        </label>
+      </form>
     </div>
+
+    <section class="video-list">
+      <div class="container">
+        <h2 class="video-list__title">В тренде</h2>
+        <ul class="video-list__items">
+          <li class="video-list__item">
+            <article class="video-card">
+              <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+              <h3 class="video-card__title">Философия Идущего к реке</h3>
+              <p class="video-card__channel">Правое полушарие интроверта</p>
+              <p class="video-card__duration">31 мин 25 сек</p>
+              <button class="video-card__favourite" type="button"></button>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      3
+    <div class="container footer__container">
+      <a class="footer__logo" href="/">
+        <svg class="footer__logo-img" viewBox="0 0 360 48" role="img" aria-label="Логотип сервиса You-Tvideo">
+          <use xlink:href="./img/sprite.svg#logo-white" />
+        </svg>
+      </a>
+
+      <ul class="developers">
+        <li class="developers__item">Designer:
+          <a class="footer__link" href="" target="_blank" rel="noopener">Anastasia Ilina</a>
+        </li>
+        <li class="developers__item">Developer:
+          <a class="footer__link" href="">Sergey Up</a>
+        </li>
+      </ul>
+
+      <p class="footer__coptright">© You-Tvideo, 2023</p>
     </div>
   </footer>
 
