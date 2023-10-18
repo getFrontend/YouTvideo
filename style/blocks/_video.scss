@@ -1,17 +1,30 @@
 .video {
-  // padding-top: 40px;
+
+  padding-top: 40px;
   padding-bottom: 60px;
 
-  &__container {
-    // padding: 0 11px;
+  @include mediaTablet {
+    padding: 60px 0;
   }
 
-  &__player {
+  @include mediaLaptop {
+    padding: 80px 0;
   }
-  
-  &__iframe {
-    width: 100%;
+
+  // &__container {}
+
+  &__player {
+    position: relative;
+    padding-bottom: 56.25%;
     overflow: hidden;
+  }
+
+  &__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     border-radius: 16px;
   }
 
@@ -35,6 +48,10 @@
     display: flex;
     align-items: center;
     gap: 4px;
+
+    @include mediaTablet {
+      align-self: flex-start;
+    }
   }
 
   &__favourite-icon {

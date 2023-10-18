@@ -1,5 +1,14 @@
 .video-list {
+  padding-top: 40px;
   padding-bottom: 60px;
+
+  @include mediaMobile {
+    padding: 60px 0;
+  }
+
+  @include mediaLaptop {
+    padding: 80px 0;
+  }
 }
 
 .related-video,
@@ -7,12 +16,22 @@
   
   &__title {
     padding-bottom: 20px;
+
+    @include mediaMobile {
+      font-size: 32px;
+      letter-spacing: 0.64px;
+    }
+
+    @include mediaLaptop {
+      font-size: 40px;
+      letter-spacing: 0.8px;
+    }
   }
   
   &__items {
     display: grid;
     // justify-content: space-evenly;
-    grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
     gap: 20px;
 
     @include mediaMobile {
@@ -20,7 +39,7 @@
     }
 
     @include mediaLaptop {
-      grid-template-columns: repeat(auto-fit, minmax(412px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(412px, 1fr));
       gap: 40px 12px;
     }
   }
