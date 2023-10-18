@@ -1,5 +1,6 @@
 @import './base/vars';
 @import './base/default';
+@import './base/mixins';
 @import './base/container';
 @import './base/fonts';
 @import './base/utils';
@@ -9,5 +10,6 @@
 @import './blocks/developers';
 @import './blocks/hero';
 @import './blocks/search';
+@import './blocks/video';
 @import './blocks/video-list';
 @import './blocks/video-card';

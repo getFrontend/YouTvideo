@@ -5,50 +5,171 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>You-Tvideo</title>
-  <link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/Inter-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/inter-v13-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/inter-v13-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
   <script type="module" src="./main.js"></script>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" hidden>
     <div class="container header__container">
       <a class="header__logo" href="/">
         <svg class="header__logo-img" viewBox="0 0 240 32" role="img" aria-label="Логотип сервиса You-Tvideo">
-          <use xlink:href="./img/sprite.svg#logo-white" />
+          <use xlink:href="./img/sprite.svg#logo-orange" />
         </svg>
       </a>
-      <a class="header__link header__link_favourite" href="/favourite">
-        <span class="header__link_favourite-text">Избранное</span>
-        <svg class="header__link_favourite-img" viewBox="0 0 20 20" role="img" aria-label="Избранные видео">
-          <use xlink:href="./img/sprite.svg#star-white" />
+      <a class="header__favourite-link" href="/favourite">
+        <span class="header__favourite-text">Избранное</span>
+        <svg class="header__favourite-icon" viewBox="0 0 20 20" role="img" aria-label="Избранные видео">
+          <use xlink:href="./img/sprite.svg#star-black" />
         </svg>
       </a>
     </div>
-
-    <section class="hero">
-      <div class="container hero__container">
-        <h1 class="title hero__title">Смотри. Загружай. Создавай</h1>
-        <p class="hero__tagline">Удобный видеохостинг для тебя </p>
-      </div>
-    </section>
   </header>
 
   <main class="main">
-
-    <div class="seacrh container">
-      <form class="search-form">
-        <input class="search-form__input" type="search" placeholder="Найти видео...">
-        <button class="search-form__btn" type="submit">
-          <span class="search-form__btn-text">поиск</span>
-          <svg class="search-form__btn-img" viewBox="0 0 20 20" role="img" aria-label="Кнопка поиска">
-            <use xlink:href="./img/sprite.svg#search" />
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <a class="hero__logo" href="/">
+            <svg class="hero__logo-img" viewBox="0 0 240 32" role="img" aria-label="Логотип сервиса You-Tvideo">
+              <use xlink:href="./img/sprite.svg#logo-white" />
+            </svg>
+          </a>
+          <div class="hero__main">
+            <h1 class="title hero__title">Смотри. Загружай. Создавай</h1>
+            <div class="hero__text">
+              <p class="hero__tagline">Удобный видеохостинг для тебя </p>
+            </div>
+          </div>
+        </div>
+        <a class="hero__favourite-link" href="/favourite">
+          <span class="hero__favourite-text">Избранное</span>
+          <svg class="hero__favourite-icon" viewBox="0 0 20 20" role="img" aria-label="Избранные видео">
+            <use xlink:href="./img/sprite.svg#star-white" />
           </svg>
-        </button>
-      </form>
+        </a>
+      </div>
+    </section>
+
+    <div class="seacrh">
+      <div class="container">
+        <form class="search-form">
+          <input class="search-form__input" type="search" placeholder="Найти видео...">
+          <button class="search-form__btn" type="submit">
+            <span class="search-form__btn-text">поиск</span>
+            <svg class="search-form__btn-img">
+              <use xlink:href="./img/sprite.svg#search" />
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
 
-    <section class="video-list">
+    <section class="video">
+      <div class="container video__container">
+        <div class="video__player">
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/9bIunwUq5i8?si=8V2JgfN4yJiyVTJO"
+            frameborder="0" allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <article class="video__content">
+          <header class="video__header">
+            <h2 class="title video__title">Философия Идущего к реке</h2>
+            <div class="video__favourite">
+              <span>В избранном</span>
+              <svg class="video__favourite-icon" viewBox="0 0 20 20" role="img"
+                aria-label="Кнопка для добавления видео в Избранное">
+                <use xlink:href="./img/sprite.svg#star-orange" />
+              </svg>
+            </div>
+          </header>
+          <p class="video__channel">Правое полушарие интроверта</p>
+          <p class="video__info">
+            <span class="video__info-stat">1 575 581 просмотр </span>
+            <span class="video__info-date">Дата премьеры: 16 авг. 2024 г.</span>
+          </p>
+          <p class="video__description">Смотрите наш курс-саммари «Как понимать философию» фоном.</p>
+        </article>
+
+
+        <div class="related-video">
+          <h3 class="title related-video__title">Похожие видео</h3>
+          <ul class="related-video__items">
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">История Кока Колы</h3>
+                    <p class="video-card__channel">Правое полушарие интроверта</p>
+                    <p class="video-card__duration">31 мин 25 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">История Кока Колы</h3>
+                    <p class="video-card__channel">Правое полушарие интроверта</p>
+                    <p class="video-card__duration">31 мин 25 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">История Кока Колы</h3>
+                    <p class="video-card__channel">Правое полушарие интроверта</p>
+                    <p class="video-card__duration">31 мин 25 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">История Кока Колы</h3>
+                    <p class="video-card__channel">Правое полушарие интроверта</p>
+                    <p class="video-card__duration">31 мин 25 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-list" hidden>
       <div class="container">
         <h2 class="title video-list__title">В тренде</h2>
         <ul class="video-list__items">
@@ -56,97 +177,12 @@
             <article class="video-card">
               <a class="video-card__link" href="#!">
                 <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+                <div class="video-card__info">
+                  <h3 class="title video-card__title">История Кока Колы</h3>
+                  <p class="video-card__channel">Правое полушарие интроверта</p>
+                  <p class="video-card__duration">31 мин 25 сек</p>
+                </div>
               </a>
-              <div class="video-card__info">
-                <h3 class="title video-card__title">История Кока Колы</h3>
-                <p class="video-card__channel">Правое полушарие интроверта</p>
-                <p class="video-card__duration">31 мин 25 сек</p>
-              </div>
-              <button class="video-card__favourite" type="button">
-                <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
-                  <use xlink:href="./img/sprite.svg#star-fill" />
-                </svg>
-              </button>
-            </article>
-          </li>
-          <li class="video-list__item">
-            <article class="video-card">
-              <a class="video-card__link" href="#!">
-                <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
-              </a>
-              <div class="video-card__info">
-                <h3 class="title video-card__title">История Кока Колы</h3>
-                <p class="video-card__channel">Правое полушарие интроверта</p>
-                <p class="video-card__duration">31 мин 25 сек</p>
-              </div>
-              <button class="video-card__favourite" type="button">
-                <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
-                  <use xlink:href="./img/sprite.svg#star-fill" />
-                </svg>
-              </button>
-            </article>
-          </li>
-          <li class="video-list__item">
-            <article class="video-card">
-              <a class="video-card__link" href="#!">
-                <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
-              </a>
-              <div class="video-card__info">
-                <h3 class="title video-card__title">История Кока Колы</h3>
-                <p class="video-card__channel">Правое полушарие интроверта</p>
-                <p class="video-card__duration">31 мин 25 сек</p>
-              </div>
-              <button class="video-card__favourite" type="button">
-                <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
-                  <use xlink:href="./img/sprite.svg#star-fill" />
-                </svg>
-              </button>
-            </article>
-          </li>
-          <li class="video-list__item">
-            <article class="video-card">
-              <a class="video-card__link" href="#!">
-                <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
-              </a>
-              <div class="video-card__info">
-                <h3 class="title video-card__title">История Кока Колы</h3>
-                <p class="video-card__channel">Правое полушарие интроверта</p>
-                <p class="video-card__duration">31 мин 25 сек</p>
-              </div>
-              <button class="video-card__favourite" type="button">
-                <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
-                  <use xlink:href="./img/sprite.svg#star-fill" />
-                </svg>
-              </button>
-            </article>
-          </li>
-          <li class="video-list__item">
-            <article class="video-card">
-              <a class="video-card__link" href="#!">
-                <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
-              </a>
-              <div class="video-card__info">
-                <h3 class="title video-card__title">История Кока Колы</h3>
-                <p class="video-card__channel">Правое полушарие интроверта</p>
-                <p class="video-card__duration">31 мин 25 сек</p>
-              </div>
-              <button class="video-card__favourite" type="button">
-                <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
-                  <use xlink:href="./img/sprite.svg#star-fill" />
-                </svg>
-              </button>
-            </article>
-          </li>
-          <li class="video-list__item">
-            <article class="video-card">
-              <a class="video-card__link" href="#!">
-                <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
-              </a>
-              <div class="video-card__info">
-                <h3 class="title video-card__title">История Кока Колы</h3>
-                <p class="video-card__channel">Правое полушарие интроверта</p>
-                <p class="video-card__duration">31 мин 25 сек</p>
-              </div>
               <button class="video-card__favourite" type="button">
                 <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
                   <use xlink:href="./img/sprite.svg#star-fill" />
@@ -166,17 +202,17 @@
           <use xlink:href="./img/sprite.svg#logo-white" />
         </svg>
       </a>
-
-      <ul class="developers">
-        <li class="developers__item">Designer:
-          <a class="footer__link" href="" target="_blank" rel="noopener">Anastasia Ilina</a>
-        </li>
-        <li class="developers__item">Developer:
-          <a class="footer__link" href="">Sergey Up</a>
-        </li>
-      </ul>
-
-      <p class="footer__coptright">© You-Tvideo, 2023</p>
+      <div class="footer__text">
+        <ul class="developers footer__developers">
+          <li class="developers__item">Designer:
+            <a class="footer__link" href="" target="_blank" rel="noopener">Anastasia Ilina</a>
+          </li>
+          <li class="developers__item">Developer:
+            <a class="footer__link" href="">Sergey Up</a>
+          </li>
+        </ul>
+        <p class="footer__coptright">© You-Tvideo, 2023</p>
+      </div>
     </div>
   </footer>
 

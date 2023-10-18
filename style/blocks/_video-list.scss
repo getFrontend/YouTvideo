@@ -1,16 +1,30 @@
 .video-list {
   padding-bottom: 60px;
+}
+
+.related-video,
+.video-list {
   
   &__title {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   
   &__items {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    // justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
     gap: 20px;
+
+    @include mediaMobile {
+      gap: 32px 12px;
+    }
+
+    @include mediaLaptop {
+      grid-template-columns: repeat(auto-fit, minmax(412px, 1fr));
+      gap: 40px 12px;
+    }
   }
 
-  &__item {
-  }
+  // &__item {
+  // }
 }

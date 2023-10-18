@@ -1,21 +1,37 @@
 .footer {
+  position: relative;
   padding: 24px 0 29px 0;
-  background-color: var(--color-primary);
+  background: var(--color-primary) url(./img/footer-bg.jpg) center/cover;
   color: var(--text-color-light);
   font-size: 14px;
   letter-spacing: 0.28px;
 
   &__container {
+
+    @include mediaMobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__logo {
     margin-bottom: 24px;
     display: block;
+
+    @include mediaMobile {
+      margin: 0;
+    }
   }
 
   &__logo-img {
     width: 180px;
     height: 24px;
+
+    @include mediaMobile {
+      width: 305px;
+      height: 40px;
+    }
   }
 
   &__link {
@@ -26,8 +42,11 @@
     }
   }
 
-  &__coptright {
+  &__text {
+    padding-right: 20px;
   }
-}
-.container {
+
+  // &__developers {}
+
+  // &__coptright {}
 }

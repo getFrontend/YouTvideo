@@ -1,17 +1,22 @@
 .container {
-  max-width: var(--container-width);
-  padding: 0 16px;
+  // max-width: var(--container-width);
+  padding: 0 var(--container-padding);
   margin: 0 auto;
 
-  @media (min-width: 580px) {
-    padding: 0 29px;
+  @include mediaMobileXS {
+		--container-padding: 16px;
+	}
+
+  @include mediaMobile {
+    --container-padding: 30px;
+    max-width: calc(624px + var(--container-padding)*2);
   }
 
-  @media (min-width: 820px) {
-    padding: 0 43px;
+  @include mediaTablet {
+    max-width: calc(942px + var(--container-padding)*2);
   }
 
-  @media (min-width: 1120px) {
-    padding: 0 92px;
+  @include mediaLaptop {
+    max-width: calc(1260px + var(--container-padding)*2);
   }
 }

@@ -1,0 +1,71 @@
+.video {
+  // padding-top: 40px;
+  padding-bottom: 60px;
+
+  &__container {
+    // padding: 0 11px;
+  }
+
+  &__player {
+  }
+  
+  &__iframe {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  &__content {
+    padding-top: 24px;
+    padding-bottom: 60px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+
+    @include mediaTablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__favourite {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__favourite-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__title {
+    padding-bottom: 16px;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+
+    @include mediaMobile {
+      font-size: 32px;
+      letter-spacing: 0.64px;
+    }
+  }
+
+  &__channel {
+    padding-bottom: 20px;
+  }
+
+  &__channel,
+  &__description,
+  &__info {
+
+    @include mediaMobile {
+      font-size: 20px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  // &__description {}
+}

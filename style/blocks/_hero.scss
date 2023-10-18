@@ -1,13 +1,120 @@
 .hero {
-
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  background: var(--color-primary) url(./img/hero-bg.jpg) center/cover;
+  color: var(--text-color-light);
+  
+  @include mediaMobile {
+    margin-bottom: 30px;
+    padding-bottom: 68px;
+  }
+  
+  @include mediaTablet {
+    padding-bottom: 80px;
+  }
+  
   &__container {
+    position: relative;
+  }
+
+  &__content {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include mediaMobile {
+      padding-top: 40px;
+      gap: 45px;
+    }
+
+    @include mediaLaptop {
+      padding-top: 60px;
+      gap: 80px;
+    }
+  }
+
+  &__logo {
+    align-self: start;
+
+    @include mediaMobile {
+      align-self: center;
+    }
+  }
+
+  &__logo-img {
+    width: 145px;
+    height: 19px;
+
+    @include mediaMobile {
+      width: 240px;
+      height: 32px;
+    }
   }
 
   &__title {
+
+    @include mediaMobile {
+      font-size: 40px;
+    }
+
+    @include mediaLaptop {
+      font-size: 70px;
+      letter-spacing: 1.4px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     text-align: center;
+
+    @include mediaLaptop {
+      gap: 32px;
+    }
+  }
+
+  &__text {
+    p + p {
+      padding-top: 16px;
+    }
   }
 
   &__tagline {
-    text-align: center;
+    font-size: 16px;
+
+    @include mediaMobileXS {
+      font-size: 20px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &__favourite-link {
+    position: absolute;
+    top: 16px;
+    right: var(--container-padding);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    
+    @include mediaMobile {
+      top: 24px;
+
+    }
+  }
+
+  &__favourite-text {
+    display: none;
+
+    @include mediaTablet {
+      display: block;
+    }
+  }
+
+  &__favourite-icon {
+    width: 20px;
+    height: 20px;
   }
 }
