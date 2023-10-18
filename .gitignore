@@ -23,5 +23,6 @@ dist-ssr
 *.sw?
 
 #My files
+/index copy_all _figma.html
 /my-description.txt
 *.zip
