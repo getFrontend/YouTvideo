@@ -73,12 +73,16 @@ const showVideos = (videos) => {
   videoList.append(...videoListItems);
 }
 
-const init = () => {
+const init = async () => {
   console.log('Start');
 
-  getTrendingVideo().then(data => {
-    showVideos(data);
-  });
+  // getTrendingVideo().then(data => {
+  //   showVideos(data);
+  // });
+
+  // Using modern JS
+  const trendinVideos = await getTrendingVideo();
+  showVideos(trendinVideos);
 }
 
 
