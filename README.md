@@ -11,7 +11,8 @@ A project written as part of the intensives taking place from 16.10.2023 to 20.1
 * CSS Flexbox & CSS Grid
 * A Fully Responsive Website
 
-## Js
+## JavaScript
+* ES6 Classes & ES6 modules 
 * Implemented YouTube API support
 
 ## Build
