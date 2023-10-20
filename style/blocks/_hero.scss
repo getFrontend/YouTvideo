@@ -3,16 +3,16 @@
   padding-bottom: 50px;
   background: var(--color-primary) url(./img/hero-bg.jpg) center/cover;
   color: var(--text-color-light);
-  
+
   @include mediaMobile {
     margin-bottom: 30px;
     padding-bottom: 68px;
   }
-  
+
   @include mediaTablet {
     padding-bottom: 80px;
   }
-  
+
   &__container {
     position: relative;
   }
@@ -78,7 +78,7 @@
   }
 
   &__text {
-    p + p {
+    p+p {
       padding-top: 16px;
     }
   }
@@ -103,15 +103,13 @@
     &:hover {
       color: var(--text-color-dark);
     }
-    
+
     @include mediaMobile {
       top: 24px;
-
     }
   }
 
   &__favourite-icon {
-    
     &:hover {
       --star-white-fill: var(--text-color-dark);
     }
