@@ -3,9 +3,11 @@ import { Favourite } from "./favourite";
 
 export class VideoList {
   create(data) {
-    this.videoList = document.querySelector('.video-list__items');
-    this.videoList.innerHTML = '';
+    if (data) {
+      this.videoList.innerHTML = '';
+    }
 
+    this.videoList = document.querySelector('.video-list__items');
     return this;
   }
 

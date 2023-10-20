@@ -7,6 +7,7 @@ export class ApiService {
   #REGION_CODE = 'UA';
   #MAX_RESULTS = 12;
 
+
   async getData(url) {
     try {
       const response = await fetch(url);

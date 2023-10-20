@@ -99,6 +99,10 @@
     display: flex;
     align-items: center;
     gap: 4px;
+
+    &:hover {
+      color: var(--text-color-dark);
+    }
     
     @include mediaMobile {
       top: 24px;
@@ -106,11 +110,20 @@
     }
   }
 
+  &__favourite-icon {
+    
+    &:hover {
+      --star-white-fill: var(--text-color-dark);
+    }
+  }
+
   &__favourite-text {
-    display: none;
+    position: fixed;
+    transform: scale(0);
 
     @include mediaTablet {
-      display: block;
+      position: relative;
+      transform: scale(1);
     }
   }
 

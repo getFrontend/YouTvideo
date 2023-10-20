@@ -29,6 +29,7 @@ const init = async () => {
     // Search page
   } else if (currentPage === 'search.html' && searchQuery) {
     console.log('Search', searchQuery)
+
     const title = document.querySelector('.video-list__title');
     title.textContent = `Поиск: ${searchQuery}`;
 
