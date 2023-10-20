@@ -1,4 +1,4 @@
-import { Favourite } from "../modules/favourite";
+import { Favourite } from "../modules/Favourites";
 
 export class ApiService {
   #API_KEY = 'AIzaSyCJb41sNM0py5NxZQ4_A7z4d-DBik6hxrg';
