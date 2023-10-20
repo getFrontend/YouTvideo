@@ -1,7 +1,7 @@
 .hero {
   margin-bottom: 20px;
   padding-bottom: 50px;
-  background: var(--color-primary) url(./img/hero-bg.jpg) center/cover;
+  background: var(--color-primary) url(/img/hero-bg.jpg) center/cover;
   color: var(--text-color-light);
 
   @include mediaMobile {
