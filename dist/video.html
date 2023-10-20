@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You-Tvideo</title>
+  <link rel="preload" href="./fonts/inter-v13-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/inter-v13-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <script type="module" crossorigin src="/assets/main-aba2e981.js"></script>
+  <link rel="stylesheet" href="/assets/main-b61458cd.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo" href="/">
+        <svg class="header__logo-img" viewBox="0 0 240 32" role="img" aria-label="Логотип сервиса You-Tvideo">
+          <use xlink:href="./img/sprite.svg#logo-orange" />
+        </svg>
+      </a>
+      <a class="header__favourite-link" href="./favourite.html">
+        <span class="header__favourite-text">Избранное</span>
+        <svg class="header__favourite-icon" viewBox="0 0 20 20" role="img" aria-label="Избранные видео">
+          <use xlink:href="./img/sprite.svg#star-black" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="seacrh">
+      <div class="container">
+        <form class="search-form" action="search.html">
+          <input class="search-form__input" type="text" name="q" placeholder="Найти видео...">
+          <button class="search-form__btn" type="submit">
+            <span class="search-form__btn-text">поиск</span>
+            <svg class="search-form__btn-img">
+              <use xlink:href="./img/sprite.svg#search" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <section class="video">
+      <div class="container video__container">
+        <div class="video__player">
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/WcIcVapfqXw" frameborder="0" allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <article class="video__content">
+          <header class="video__header">
+            <h2 class="title video__title">Rema, Selena Gomez - Calm Down (Official Music Video)</h2>
+            <div class="favourite video__favourite">
+              <span>В избранном</span>
+              <svg class="video-card__favourite-icon" class="video__favourite-icon" viewBox="0 0 20 20" role="img"
+                aria-label="Кнопка для добавления видео в Избранное">
+                <use xlink:href="./img/sprite.svg#star-orange" />
+              </svg>
+            </div>
+          </header>
+          <p class="video__channel">Selena Gomez</p>
+          <p class="video__info">
+            <span class="video__info-stat">675 310 487 просмотров </span>
+            <span class="video__info-date">Дата премьеры: 7 сен. 2022 г.</span>
+          </p>
+          <p class="video__description">Music video by Rema, Selena Gomez performing Calm Down.</p>
+        </article>
+
+
+        <div class="related-video">
+          <h3 class="title related-video__title">Похожие видео</h3>
+          <ul class="related-video__items">
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">История Кока Колы</h3>
+                    <p class="video-card__channel">Правое полушарие интроверта</p>
+                    <p class="video-card__duration">31 мин 25 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="https://i.ytimg.com/vi/RZUmgKOHET0/maxresdefault.jpg"
+                    alt="Превью к видео: HAUSER - Rebel With a Cello - Live in Budapest (Full Concert)">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">HAUSER - Rebel With a Cello - Live in Budapest (Full Concert)
+                    </h3>
+                    <p class="video-card__channel">HAUSER</p>
+                    <p class="video-card__duration">1 ч 43 мин 45 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="https://i.ytimg.com/vi/BX0lKSa_PTk/maxresdefault.jpg"
+                    alt="Превью к видео: Oliver Tree & Robin Schulz - Miss You [Official Music Video]">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">Oliver Tree & Robin Schulz - Miss You [Official Music Video]
+                    </h3>
+                    <p class="video-card__channel">Oliver Tree</p>
+                    <p class="video-card__duration">2 мин 49 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="https://i.ytimg.com/vi/X-t5QxXtY2U/maxresdefault.jpg"
+                    alt="Превью к видео: Interstellar | Melancholic Melody, 1 Hour Magical Journey, Sleep Aid, Ambient Music">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">Interstellar | Melancholic Melody, 1 Hour Magical Journey, Sleep
+                      Aid, Ambient Music</h3>
+                    <p class="video-card__channel">Soothing Sonata</p>
+                    <p class="video-card__duration">1 ч 00 мин</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">История Кока Колы</h3>
+                    <p class="video-card__channel">Правое полушарие интроверта</p>
+                    <p class="video-card__duration">31 мин 25 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="https://i.ytimg.com/vi/RZUmgKOHET0/maxresdefault.jpg"
+                    alt="Превью к видео: HAUSER - Rebel With a Cello - Live in Budapest (Full Concert)">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">HAUSER - Rebel With a Cello - Live in Budapest (Full Concert)
+                    </h3>
+                    <p class="video-card__channel">HAUSER</p>
+                    <p class="video-card__duration">1 ч 43 мин 45 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="https://i.ytimg.com/vi/BX0lKSa_PTk/maxresdefault.jpg"
+                    alt="Превью к видео: Oliver Tree & Robin Schulz - Miss You [Official Music Video]">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">Oliver Tree & Robin Schulz - Miss You [Official Music Video]
+                    </h3>
+                    <p class="video-card__channel">Oliver Tree</p>
+                    <p class="video-card__duration">2 мин 49 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="https://i.ytimg.com/vi/X-t5QxXtY2U/maxresdefault.jpg"
+                    alt="Превью к видео: Interstellar | Melancholic Melody, 1 Hour Magical Journey, Sleep Aid, Ambient Music">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">Interstellar | Melancholic Melody, 1 Hour Magical Journey, Sleep
+                      Aid, Ambient Music</h3>
+                    <p class="video-card__channel">Soothing Sonata</p>
+                    <p class="video-card__duration">1 ч 00 мин</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+            <li class="related-video__item">
+              <article class="video-card">
+                <a class="video-card__link" href="#!">
+                  <img class="video-card__thumbnail" src="./img/demo-thumbnail-img.jpg" alt="Превью к видео:">
+                  <div class="video-card__info">
+                    <h3 class="title video-card__title">История Кока Колы</h3>
+                    <p class="video-card__channel">Правое полушарие интроверта</p>
+                    <p class="video-card__duration">31 мин 25 сек</p>
+                  </div>
+                </a>
+                <button class="video-card__favourite" type="button">
+                  <svg viewBox="0 0 20 20" role="img" aria-label="Кнопка для добавления видео в Избранное">
+                    <use xlink:href="./img/sprite.svg#star-fill" />
+                  </svg>
+                </button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <a class="footer__logo" href="/">
+        <svg class="footer__logo-img" viewBox="0 0 360 48" role="img" aria-label="Логотип сервиса You-Tvideo">
+          <use xlink:href="./img/sprite.svg#logo-white" />
+        </svg>
+      </a>
+      <div class="footer__text">
+        <ul class="developers footer__developers">
+          <li class="developers__item">Designer:
+            <a class="footer__link" href="" target="_blank" rel="noopener">Anastasia Ilina</a>
+          </li>
+          <li class="developers__item">Developer:
+            <a class="footer__link" href="">Sergey Up</a>
+          </li>
+        </ul>
+        <p class="footer__coptright">© You-Tvideo, 2023</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
