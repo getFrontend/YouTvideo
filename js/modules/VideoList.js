@@ -1,5 +1,5 @@
 import { formatTime } from "../helpers/formatTime";
-import { Favourite } from "./favourite";
+import { Favourite } from "./Favourite";
 
 export class VideoList {
   create(data) {
