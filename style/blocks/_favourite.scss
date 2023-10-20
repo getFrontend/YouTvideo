@@ -1,0 +1,17 @@
+:root {
+  --star-black-fill: #292D32;
+  --star-white-fill: white;
+
+  --star-fill-fill: white;
+  --star-fill-stroke: #151515;
+
+  --star-orange: #FF6A00;
+}
+
+.favourite {
+  
+  &_active {
+    --star-fill-fill: #FF6A00;
+    --star-fill-stroke: var(--star-orange);
+  }
+}

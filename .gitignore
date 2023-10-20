@@ -23,6 +23,7 @@ dist-ssr
 *.sw?
 
 #My files
+/main copy_no CLass.js
 /index copy_all _figma.html
 /my-description.txt
 *.zip

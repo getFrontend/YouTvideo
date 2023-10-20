@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>You-Tvideo: избранные видео</title>
+  <title>You-Tvideo: поиск видео</title>
   <link rel="preload" href="./fonts/inter-v13-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/inter-v13-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
   <script type="module" src="./main.js"></script>
@@ -30,8 +30,9 @@
   <main class="main">
     <div class="seacrh">
       <div class="container">
-        <form class="search-form" action="search.html">
-          <input class="search-form__input" type="text" name="q" placeholder="Найти видео...">
+        <form class="search-form" action="https://www.youtube.com/results">
+          <input class="search-form__input" type="text" id="youtube-search" name="search_query"
+            placeholder="Найти видео...">
           <button class="search-form__btn" type="submit">
             <span class="search-form__btn-text">поиск</span>
             <svg class="search-form__btn-img">
@@ -44,7 +45,7 @@
 
     <section class="video-list">
       <div class="container">
-        <h2 class="title video-list__title">Избранное</h2>
+        <h2 class="title video-list__title">Поиск</h2>
         <ul class="video-list__items">
           <li class="video-list__item">
             <article class="video-card">
