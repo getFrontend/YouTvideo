@@ -12,6 +12,10 @@ export class VideoList {
   }
 
   showVideoList(videos) {
+    if (!videos) {
+      console.log('Не удалось загрузить видео с Youtube, поэтому вы видите демо данные.')
+      throw new Error('Sorry, but we have a problem with Youtube server to get data.');
+    }
     console.log("videos=", videos)
 
     new Favourite().set();
