@@ -3,9 +3,12 @@ import './style/main.scss';
 import { VideoList } from './js/modules/VideoList';
 import { Video } from './js/modules/Video';
 import { ApiService } from './js/services/ApiService';
+import Navigo from 'navigo';
 
 
 const init = async () => {
+  const router = new Navigo('/', { hash: true });
+
   const currentPage = location.pathname.split('/').pop();
   const urlSearchParams = new URLSearchParams(location.search);
   const videoId = urlSearchParams.get('id');
